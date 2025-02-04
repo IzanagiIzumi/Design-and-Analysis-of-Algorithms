@@ -1,8 +1,6 @@
 HEAD
 # Singly Linked List in C++
 
-# Singly Linked List in C++
-
 This repository contains a C++ implementation of a **Singly Linked List** data structure. The program includes basic operations such as insertion, deletion, traversal, and search.
 
 ## Operations
