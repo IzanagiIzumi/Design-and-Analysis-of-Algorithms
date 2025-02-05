@@ -11,6 +11,8 @@ This repository contains a C++ implementation of a **Singly Linked List** data s
 - **Traverse**: Prints all the elements of the list.
 - **Search**: Checks if an element exists in the list.
 
+
+
 ## Compilation and Execution
 
 To compile and run the program:
