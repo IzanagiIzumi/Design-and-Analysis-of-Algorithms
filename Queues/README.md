@@ -27,11 +27,12 @@ A **Queue** is a linear data structure that follows the **FIFO (First In, First 
 
    ./queues
 
-Example Output
+### Example Output
 
-Queue after enqueues: 10 20 30
-Queue after one dequeue: 20 30
+    Queue after enqueues: 10 20 30
+    Queue after one dequeue: 20 30
 
-Author
-Izu
-GitHub: @IzanagiIzumi
+### Author
+
+    Izu
+    GitHub: @IzanagiIzumi
