@@ -29,15 +29,15 @@ This project implements a **Graph using an Adjacency List** in C++ and demonstra
    ./graphs
 
 ### Example Output:
-   ```sh
-   Dijkstra's Shortest Path Algorithm:
-   Vertex  Distance from Source 0
-   0        0
-   1        3
-   2        1
-   3        4
-   4        7
+   
+    Dijkstra's Shortest Path Algorithm:
+    Vertex  Distance from Source 0
+    0        0
+    1        3
+    2        1
+    3        4
+    4        7
 
 ### Author
-Name: John Paul Barlongo
-Github:@IzanagiIzumi
+    Name: John Paul Barlongo
+    Github:@IzanagiIzumi
