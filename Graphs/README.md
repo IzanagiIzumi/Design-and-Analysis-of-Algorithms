@@ -29,7 +29,7 @@ This project implements a **Graph using an Adjacency List** in C++ and demonstra
    ./graphs
 
 ### Example Output:
-   ``sh
+   ```sh
    Dijkstra's Shortest Path Algorithm:
    Vertex  Distance from Source 0
    0        0
