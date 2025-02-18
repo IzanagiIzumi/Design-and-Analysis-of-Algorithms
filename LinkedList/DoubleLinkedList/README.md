@@ -32,7 +32,7 @@ This project implements a Doubly Linked List in C++ using a Node class and provi
 
 ### Example Output
 
-   https://asciinema.org/a/wtdYGIdZMS54fVwZooyOjOR8S
+   https://asciinema.org/a/wrdVugpgrcx9B51y9fKxbKyin
 
     Doubly Linked List: 10 <-> 20 <-> 30 <-> NULL
     After Deleting 20: 10 <-> 30 <-> NULL
