@@ -32,8 +32,8 @@ This project implements a Circular Linked List in C++ using a Node structure and
 
 ### Example Output
 
-    https://asciinema.org/a/hecY3pl7fvhSSjjJULiGyAlZh
-
+   https://asciinema.org/a/hecY3pl7fvhSSjjJULiGyAlZh
+    
     Circular Linked List: 10 -> 20 -> 30 -> 40 -> (head)
    
 ### Author
