@@ -1,13 +1,43 @@
-# Doubly Linked List in C++
+# Doubly Linked List (C++)
+A Doubly Linked List is a linked list in which each node contains two pointers, one pointing to the next node and the other pointing to the previous node.
 
-This is a simple implementation of a Doubly Linked List (DLL) in C++. It supports:
+## Overview
+This project implements a Doubly Linked List in C++ using a Node class and provides operations such as insertion, deletion, and display.
 
-- Insertion at the end
-- Deletion of a node
-- Displaying the list
+## Features
+- Node Structure: Each node contains data, a pointer to the previous node, and a pointer to the next node.
+- Insertion Operation: Adds new nodes at the end of the list.
+- Deletion Operation: Deletes nodes with a specific value, adjusting pointers accordingly.
+- Display Function: Prints all elements from head to tail.
+- Dynamic Memory Allocation: Uses new and delete for node management.
 
-## How to Compile and Run
+## Installation & Compilation
+### Prerequisites:
+- C++ Compiler (g++ recommended)
+- Git installed
 
-```sh
-g++ -o dll DoublyLinkedList.cpp
-./dll
+### Steps to Compile and Run:
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/IzanagiIzumi/Design-and-Analysis-of-Algorithms.git
+   cd Design-and-Analysis-of-Algorithms/SinglyLinkedList
+
+2. Compile the Program:
+   ```sh
+   g++ -o sll SinglyLinkedList.cpp
+
+3. Run the executable:
+   ```sh
+   ./sll
+
+### Example Output
+
+   https://asciinema.org/a/wtdYGIdZMS54fVwZooyOjOR8S
+
+    Doubly Linked List: 10 <-> 20 <-> 30 <-> NULL
+    After Deleting 20: 10 <-> 30 <-> NULL
+    
+### Author
+
+    Name : John Paul Barlongo
+    GitHub: @IzanagiIzumi
