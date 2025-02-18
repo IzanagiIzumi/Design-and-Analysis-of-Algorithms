@@ -1,4 +1,7 @@
 # Trees Data Strucure
+A tree represents a hierarchical nature of a structure in a
+graphical form. It consists of elements or nodes, with each
+node linked to its successors.
 
 ## Binary Search Tree
 
@@ -31,6 +34,8 @@ A **Binary Search Tree** is a hierarchical data structure where:
    ./trees
 
 ### Example Output:
+
+   https://asciinema.org/a/epJPg2Ih0071oBMi1lFlW2wXT
 
     Inorder Traversal: 20 30 40 50 60 70 80 
     Search 40: Found
