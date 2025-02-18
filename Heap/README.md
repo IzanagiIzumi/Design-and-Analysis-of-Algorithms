@@ -38,9 +38,9 @@ This repository implements a MaxHeap in C++ using a dynamic array (vector) and p
 
    https://asciinema.org/a/wSszkIx0HEXQ4PlPAsrqfbjq6
 
-   Heap elements: 60 50 40 10 20 35 30
-   Extracted Max: 60
-   Heap after extraction: 50 30 40 10 20 35
+    Heap elements: 60 50 40 10 20 35 30
+    Extracted Max: 60
+    Heap after extraction: 50 30 40 10 20 35
 
 ### Author
 
