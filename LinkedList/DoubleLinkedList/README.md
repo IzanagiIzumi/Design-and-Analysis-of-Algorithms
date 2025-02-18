@@ -20,7 +20,7 @@ This project implements a Doubly Linked List in C++ using a Node class and provi
 1. Clone this repository:
    ```sh
    git clone https://github.com/IzanagiIzumi/Design-and-Analysis-of-Algorithms.git
-   cd Design-and-Analysis-of-Algorithms/SinglyLinkedList
+   cd Design-and-Analysis-of-Algorithms/DoubleLinkedList
 
 2. Compile the Program:
    ```sh
