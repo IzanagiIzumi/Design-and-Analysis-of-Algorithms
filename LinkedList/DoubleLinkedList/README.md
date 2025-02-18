@@ -24,11 +24,11 @@ This project implements a Doubly Linked List in C++ using a Node class and provi
 
 2. Compile the Program:
    ```sh
-   g++ -o sll SinglyLinkedList.cpp
+   g++ -o dll DoubleLinkedList.cpp
 
 3. Run the executable:
    ```sh
-   ./sll
+   ./dll
 
 ### Example Output
 
