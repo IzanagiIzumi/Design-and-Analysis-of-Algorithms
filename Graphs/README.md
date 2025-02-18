@@ -1,4 +1,6 @@
 # Graph Data Structure (C++ Implementation)
+A graph consists of a set of vertices (or nodes) and a set of
+edges (relations) between the pairs of vertices
 
 ## Overview
 A **Graph** is a set of **vertices (nodes)** connected by **edges**.  
@@ -29,6 +31,8 @@ This project implements a **Graph using an Adjacency List** in C++ and demonstra
    ./graphs
 
 ### Example Output:
+
+   https://asciinema.org/a/MmLJPj2uerFymYFXS9rPqVIsK
    
     Dijkstra's Shortest Path Algorithm:
     Vertex  Distance from Source 0
