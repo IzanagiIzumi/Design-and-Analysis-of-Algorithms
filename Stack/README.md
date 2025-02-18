@@ -1,4 +1,6 @@
 # Stack Data Structure (C++ Implementation)
+A stack is an ordered list in which the last element added is
+the first element retrieved or removed (Last-In, First-Out).
 
 ## Overview
 A **Stack** is a linear data structure that follows the **LIFO (Last In, First Out)** principle.  
@@ -30,6 +32,8 @@ This project implements a Stack using a **Linked List** in C++.
    ./stack
 
 ### Example Output
+
+   https://asciinema.org/a/QZoAoPRMjV04u2mgpiSxVdgSP
 
     Stack after push operations: 30 20 10
     Top element: 30
