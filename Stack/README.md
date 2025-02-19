@@ -12,6 +12,38 @@ This project implements a Stack using a **Linked List** in C++.
 - **Peek (Top)** - Returns the top element without removing it.
 - **Display** - Prints all elements in the stack.
 
+## Core line of the code
+```cpp
+struct Node {
+    int data;
+    Node* next;
+    Node(int value) : data(value), next(nullptr) {}
+};
+
+class Stack {
+private:
+    Node* top;
+
+public:
+    Stack() : top(nullptr) {}
+
+    void push(int value) {
+        Node* newNode = new Node(value);
+        newNode->next = top;
+        top = newNode;
+    }
+
+    void pop() {
+        if (!top) return;
+        Node* temp = top;
+        top = top->next;
+        delete temp;
+    }
+
+    int peek() { return top ? top->data : -1; }
+};
+```
+
 ## Installation & Compilation
 ### Prerequisites:
 - C++ Compiler (g++ recommended)
