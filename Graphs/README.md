@@ -11,6 +11,50 @@ This project implements a **Graph using an Adjacency List** in C++ and demonstra
 - **Dijkstra's Algorithm** - Finds the shortest path from a source node.
 - **Efficient using Priority Queue** (O(V + E log V) complexity).
 
+## Core line of the code
+```cpp
+#include <vector>
+#include <queue>
+#include <limits>
+using namespace std;
+
+const int INF = numeric_limits<int>::max();
+
+class Graph {
+private:
+    int vertices;
+    vector<vector<pair<int, int>>> adjList;
+
+public:
+    Graph(int v) : vertices(v), adjList(v) {}
+
+    void addEdge(int u, int v, int weight) {
+        adjList[u].push_back({v, weight});
+        adjList[v].push_back({u, weight});
+    }
+
+    void dijkstra(int src) {
+        vector<int> dist(vertices, INF);
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
+
+        dist[src] = 0;
+        pq.push({0, src});
+
+        while (!pq.empty()) {
+            int u = pq.top().second;
+            pq.pop();
+
+            for (auto [v, weight] : adjList[u]) {
+                if (dist[u] + weight < dist[v]) {
+                    dist[v] = dist[u] + weight;
+                    pq.push({dist[v], v});
+                }
+            }
+        }
+    }
+};
+```
+
 ## Installation & Compilation
 ### Prerequisites:
 - C++ Compiler (g++ recommended)
