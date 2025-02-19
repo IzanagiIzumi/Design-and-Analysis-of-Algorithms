@@ -25,9 +25,8 @@ This project implements a Singly Linked List in C++ using a Node structure and p
 **Dynamic Memory Allocation:** Uses new and delete for node management.
 
 ## Core Line of the Code
-
-'''cpp
-struct Node {
+   '''sh
+   struct Node {
     int data;
     Node* next;
     Node(int val) : data(val), next(nullptr) {}
@@ -88,6 +87,8 @@ public:
         head = prev;
     }
 };
+
+
 
 ## Installation & Compilation
 ### Prerequisites:
