@@ -73,5 +73,5 @@ public:
 
 ### Author
 
-    Izu
-    GitHub: IzanagiIzumi
+    John Paul Barlongo
+    GitHub: @IzanagiIzumi
