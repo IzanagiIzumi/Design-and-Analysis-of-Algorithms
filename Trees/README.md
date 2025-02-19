@@ -14,6 +14,53 @@ A **Binary Search Tree** is a hierarchical data structure where:
 ✅ Inorder Traversal
 ✅ Search
 
+## Core line of the code
+```cpp
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+    
+    Node(int value) {
+        data = value;
+        left = right = nullptr;
+    }
+};
+
+class BST {
+public:
+    Node* root;
+
+    BST() { root = nullptr; }
+
+    Node* insert(Node* node, int value) {
+        if (!node) return new Node(value);
+        if (value < node->data) node->left = insert(node->left, value);
+        else if (value > node->data) node->right = insert(node->right, value);
+        return node;
+    }
+
+    void insert(int value) { root = insert(root, value); }
+
+    void inorder(Node* node) {
+        if (!node) return;
+        inorder(node->left);
+        cout << node->data << " ";
+        inorder(node->right);
+    }
+
+    void inorder() { inorder(root); cout << endl; }
+
+    bool search(Node* node, int value) {
+        if (!node) return false;
+        if (node->data == value) return true;
+        return value < node->data ? search(node->left, value) : search(node->right, value);
+    }
+
+    bool search(int value) { return search(root, value); }
+};
+```
+
 ## Installation & Compilation
 ### Prerequisites:
 - C++ Compiler (g++ recommended)
