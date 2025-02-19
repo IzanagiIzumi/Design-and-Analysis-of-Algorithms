@@ -11,6 +11,48 @@ This project implements a Doubly Linked List in C++ using a Node class and provi
 - Display Function: Prints all elements from head to tail.
 - Dynamic Memory Allocation: Uses new and delete for node management.
 
+## Core line of the code
+```cpp
+class Node {
+public:
+    int data;
+    Node* prev;
+    Node* next;
+    Node(int val) : data(val), prev(nullptr), next(nullptr) {}
+};
+
+class DoublyLinkedList {
+private:
+    Node* head;
+public:
+    DoublyLinkedList() : head(nullptr) {}
+
+    void insertEnd(int val) {
+        Node* newNode = new Node(val);
+        if (!head) {
+            head = newNode;
+            return;
+        }
+        Node* temp = head;
+        while (temp->next) temp = temp->next;
+        temp->next = newNode;
+        newNode->prev = temp;
+    }
+
+    void deleteNode(int val) {
+        Node* temp = head;
+        while (temp && temp->data != val) temp = temp->next;
+        if (!temp) return;
+
+        if (temp->prev) temp->prev->next = temp->next;
+        if (temp->next) temp->next->prev = temp->prev;
+        if (temp == head) head = temp->next;
+
+        delete temp;
+    }
+};
+```
+
 ## Installation & Compilation
 ### Prerequisites:
 - C++ Compiler (g++ recommended)
