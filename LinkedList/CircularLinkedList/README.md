@@ -11,6 +11,40 @@ This project implements a Circular Linked List in C++ using a Node structure and
 - Display Function: Prints all elements in the list, starting from the head and looping back.
 - Dynamic Memory Allocation: Uses new and Node* pointers for memory management.
 
+## Core line of the code
+```cpp
+struct Node {
+    int data;
+    Node* next;
+};
+
+class CircularLinkedList {
+private:
+    Node* head;
+
+public:
+    CircularLinkedList() {
+        head = nullptr;
+    }
+
+    void insert(int value) {
+        Node* newNode = new Node();
+        newNode->data = value;
+        if (head == nullptr) {
+            head = newNode;
+            newNode->next = head;
+        } else {
+            Node* temp = head;
+            while (temp->next != head) {
+                temp = temp->next;
+            }
+            temp->next = newNode;
+            newNode->next = head;
+        }
+    }
+};
+```
+
 ## Installation & Compilation
 ### Prerequisites:
 - C++ Compiler (g++ recommended)
