@@ -91,4 +91,4 @@ public:
 ### Author
 
     Name: John Paul Barlongo
-    GitHub: IzanagiIzumi
+    GitHub: @IzanagiIzumi
